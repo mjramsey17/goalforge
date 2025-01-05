@@ -16,12 +16,12 @@
   { name: 'Goals', href: '/goals', icon: UserGroupIcon },
 ];*/
 const links = [
-    { name: 'Home', href: '/'},
+    { name: 'Home', href: '/dashboard'},
     {
       name: 'Events',
-      href: '/events',
+      href: '/dashboard/events',
     },
-    { name: 'Goalchart', href: '/goalchart'},
+    { name: 'Goalchart', href: 'dashboard/goalchart'},
   ];
   export default function NavLinks() {
     return (

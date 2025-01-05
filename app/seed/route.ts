@@ -81,15 +81,21 @@ async function seedEvents() {
 
     const insertedEvents = await Promise.all(
         Events.map((event) => player.sql`
-            INSERT INTO Events (EventId,GameID,Time,Type,Team,PlayerId)
-                VALUES (${event.EventId}, ${event.GameID}, ${event.Time}, ${event.Type}, ${event.Team},${event.PlayerId})
+            INSERT INTO Events (GameID,Time,Type,Team,PlayerId)
+                VALUES (${event.GameID}, ${event.Time}, ${event.Type}, ${event.Team},${event.PlayerId})
                 ON CONFLICT (EventID) DO NOTHING;
         `)
     );
     return insertedEvents;
 }
 
-
+/*  const insertedEvents = await Promise.all(
+        Events.map((event) => player.sql`
+            INSERT INTO Events (EventId,GameID,Time,Type,Team,PlayerId)
+                VALUES (${event.EventId}, ${event.GameID}, ${event.Time}, ${event.Type}, ${event.Team},${event.PlayerId})
+                ON CONFLICT (EventID) DO NOTHING;
+        `)
+    ); */
 
 
 

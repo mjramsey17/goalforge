@@ -1,10 +1,10 @@
 
 'use client';
-import { Button } from '../ui/button'; // Importing the Button component
+import { Button } from '../../ui/button'; // Importing the Button component
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import backgroundImage from 'C:/Users/micha/350react/350Project/teamapp/app/eventback2.jpg'; // Make sure to adjust the path
-import { createEvent } from '../lib/action'; // Assuming this function sends the data
+import { createEvent } from '../../lib/action'; // Assuming this function sends the data
 import { redirect } from 'next/navigation';
 import { useRouter } from 'next/router'; // Import the useRouter hook
 import Link from 'next/link';
@@ -46,7 +46,7 @@ export default function Form() {
 
   if (!isMounted) return null;
 
-  const containerStyle: React.CSSProperties = {
+  const containerStyle ={
     position: 'absolute',
     height: height1 < 550 ? '75vh' : '500px',
     width: height1 < 550 ? '45vw' : '400px',
@@ -61,7 +61,7 @@ export default function Form() {
     placeItems: 'center',
   };
 
-  const inputStyle: React.CSSProperties = {
+  const inputStyle = {
     textAlign: 'center',
     width: width1 < 550 || height1 < 450 ? '80%' : '100%',
     height: width1 < 550 || height1 < 450 ? '80%' : '100%',
@@ -69,9 +69,9 @@ export default function Form() {
   };
 
   // Handle form submission
-  const handleClick= async (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent the default form submission
-  console.log("why");
+  async function handleClick() {
+   // event.preventDefault(); // Prevent the default form submission
+  //console.log("why");
     // Create a new FormData instance
     const formData = new FormData();
    // formData.append('eventId', eventId.toString());  // Convert number to string
@@ -102,6 +102,7 @@ export default function Form() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          backgroundPosition = "bottom"
         />
         <div style={containerStyle}>  
           <div className="grid place-items-center mb-4" style={{ textAlign: 'center', paddingInline: '40px' }}>
