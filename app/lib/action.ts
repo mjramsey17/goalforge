@@ -19,11 +19,11 @@ export async function createEvent(formData: FormData) {
     console.log("bruh");
   const {GameId,Time, Type,Team,PlayerId}= CreateEvent.parse({
     //EventId: formData.get("eventId"),
-    GameId: formData.get("gameID"), 
-    Time:formData.get("time"), 
-    Type: formData.get("eventType"), 
-    Team: formData.get('team'), 
-    PlayerId: formData.get("playerID")
+    GameId: Number(formData.get("gameID")), 
+    Time: Number(formData.get("time")), 
+    Type:  formData.get("eventType"), 
+    Team:  formData.get('team'), 
+    PlayerId:  Number(formData.get("playerID"))
   });
   console.log("here1")
   await sql`

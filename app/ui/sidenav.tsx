@@ -14,7 +14,7 @@ import NavLinks from '@/app/ui/nav-links';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2 " style = {{backgroundColor:'maroon'}}>
+    <div className="flex h-full flex-col px-3 py-4 md:px-2 " style = {{backgroundColor:'maroon',backgroundPosition:"top"}}>
       <Link
 
         className="mb-2 flex h-20 items-end justify-start rounded-md bg-maroon-600 pb-1 p-5 md:h-40 "

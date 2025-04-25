@@ -3,6 +3,6 @@ export type Event = {
     GameId: number;
     Time: number;
     Type: string;
-    Team: BinaryData;
+    Team: BinaryType;
     PlayerId: number; 
 }

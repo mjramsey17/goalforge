@@ -116,7 +116,7 @@ export async function GET() {
     } catch (error) {
         console.error(error);  // Log the error details
         await player.sql`ROLLBACK`;
-        return Response.json({ error: error.message }, { status: 500 });
+        //return Response.json({ error: error.message }, { status: 500 });
     }
 }
 
