@@ -9,6 +9,7 @@ frontend:
       commands:
         - pnpm run build # Build your Next.js app
   artifacts:
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
