@@ -7,7 +7,7 @@ objectPosition="center"
 />*/
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from "RCLogo.png";
+import Logo from "../../RCLogo.png";
 import NavLinks from '@/app/ui/nav-links';
 //        className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
 //import { PowerIcon } from '@heroicons/react/24/outline';
