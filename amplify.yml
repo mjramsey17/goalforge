@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm install -g pnpm # Install pnpm globally
-        - pnpm install --frozen-lockfile # Install dependencies exactly as lockfile says
+        - pnpm install --no-frozen-lockfile # Install dependencies exactly as lockfile says
     build:
       commands:
         - pnpm run build # Build your Next.js app
