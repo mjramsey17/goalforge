@@ -3,7 +3,7 @@
 import { Button } from '../../ui/button'; // Importing the Button component
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import backgroundImage from 'C:/Users/micha/350react/350Project/teamapp/app/eventback2.jpg'; // Make sure to adjust the path
+import backgroundImage from 'eventback2.jpg'; // Make sure to adjust the path
 import { createEvent } from '../../lib/action'; // Assuming this function sends the data
 import { redirect } from 'next/navigation';
 import { useRouter } from 'next/router'; // Import the useRouter hook
