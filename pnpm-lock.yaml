@@ -39,6 +39,9 @@ importers:
       '@types/node':
         specifier: ^20
         version: 20.17.9
+      '@types/pg':
+        specifier: ^8.11.14
+        version: 8.11.14
       '@types/react':
         specifier: ^19
         version: 19.0.1
@@ -332,6 +335,9 @@ packages:
 
   '@types/node@22.15.2':
     resolution: {integrity: sha512-uKXqKN9beGoMdBfcaTY1ecwz6ctxuJAcUlwE55938g0ZJ8lRxwAZqRz2AJ4pzpt5dHdTPMB863UZ0ESiFUcP7A==}
+
+  '@types/pg@8.11.14':
+    resolution: {integrity: sha512-qyD11E5R3u0eJmd1lB0WnWKXJGA7s015nyARWljfz5DcX83TKAIlY+QrmvzQTsbIe+hkiFtkyL2gHC6qwF6Fbg==}
 
   '@types/pg@8.11.6':
     resolution: {integrity: sha512-/2WmmBXHLsfRqzfHW7BNZ8SbYzE8OSk7i3WjFYvfgRHj7S1xj+16Je5fUKv3lVdVzk/zn9TXOqf+avFCFIE0yQ==}
@@ -1957,7 +1963,7 @@ snapshots:
   '@neondatabase/serverless@1.0.0':
     dependencies:
       '@types/node': 22.15.2
-      '@types/pg': 8.11.6
+      '@types/pg': 8.11.14
 
   '@next/env@15.0.4': {}
 
@@ -2025,6 +2031,12 @@ snapshots:
   '@types/node@22.15.2':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/pg@8.11.14':
+    dependencies:
+      '@types/node': 20.17.9
+      pg-protocol: 1.9.5
+      pg-types: 4.0.2
 
   '@types/pg@8.11.6':
     dependencies:

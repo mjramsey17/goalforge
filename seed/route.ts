@@ -1,6 +1,6 @@
 import { db } from '@vercel/postgres'
 import {Client} from 'pg';
-import { Players, Events, Games, Seasons } from '../lib/soccer-data'
+import { Players, Events, Games, Seasons } from '../app/lib/soccer-data'
 
 const player = new Client({
     connectionString: process.env.POSTGRES_URL, // Use the Neon connection string
