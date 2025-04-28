@@ -8,10 +8,10 @@ export default function AuthForm() {
 
     const router = useRouter();
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-f-screen items-center justify-center bg-gradient-to-br from-gray-500 to-maroon-600">
       <Authenticator>
         {({ signOut, user }) => (
-        <div className="flex f-screen items-center justify-center bg-gradient-to-br from-gray-500 to-maroon-600">
+        <div className="flex f-screen items-center justify-center">
             <>
             <button
              onClick={() => router.push('/dashboard')}
