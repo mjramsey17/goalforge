@@ -3,7 +3,7 @@ import homeBackground from "../../RCmsoc102922-36.png"
 import localFont from 'next/font/local'
 
 const cityBold = localFont({
-  src: './fonts/CITYBOLB.TTF', 
+  src: '../fonts/CITYBOLB.TTF', 
   weight: '700', // usually bold weight is 700
   variable: '--font-city-bold',
   display: 'swap',
@@ -25,8 +25,7 @@ export default function Page() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"/>
-        <div
-        className= {cityBold.className}>
+        <div>
           <div style={{fontSize: 20}}>Roanoke College Men's Soccer</div>
           <div style={{fontSize: 40}}>Family</div>
           <div style={{fontSize: 20}}>Prepared for success in any environment, in any conditions, on anyday</div>
