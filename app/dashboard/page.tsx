@@ -1,7 +1,38 @@
 import Image from "next/image";
-
+import homeBackground from "../../RCmsoc102922-36.png"
+import localFont from 'next/font/local'
+const cityBold = localFont({
+  src: '../public/fonts/City-Bold.ttf', 
+  weight: '700', // usually bold weight is 700
+  variable: '--font-city-bold',
+  display: 'swap',
+});
 export default function Page() {
-  return <p>Home Page</p>;
+  return (
+    <body
+        style={{
+          //position: 'relative',
+          width: '100%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center',
+          display: 'flex',
+        }}>
+          <Image
+            src={homeBackground}
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"/>
+        <div
+        className= {cityBold.className}>
+          <div style={{fontSize: 20}}>Roanoke College Men's Soccer</div>
+          <div style={{fontSize: 40}}>Family</div>
+          <div style={{fontSize: 20}}>Prepared for success in any environment, in any conditions, on anyday</div>
+
+        </div>
+    </body>
+    );
 }
 /*export default function Home() {
   return (

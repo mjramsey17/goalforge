@@ -1,10 +1,5 @@
-/*<Image
-src={backgroundImage}
-alt="Background"
-layout="fill"
-objectFit="cover"
-objectPosition="center"
-/>*/
+
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from "../../RCLogo.png";
