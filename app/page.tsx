@@ -11,7 +11,7 @@ export default function AuthForm() {
     <div className="flex min-h-screen items-center justify-center">
       <Authenticator>
         {({ signOut, user }) => (
-        <div className="flex f-screen items-center justify-center bg-gradient-to-br from-grey-500 to-red-600">
+        <div className="flex f-screen items-center justify-center bg-gradient-to-br from-gray-500 to-maroon-600">
             <>
             <button
              onClick={() => router.push('/dashboard')}
