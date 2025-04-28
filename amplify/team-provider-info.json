@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-goalforge-dev-083fd-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767828741541:role/amplify-goalforge-dev-083fd-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767828741541:role/amplify-goalforge-dev-083fd-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-goalforge-dev-083fd-deployment",
+      "UnauthRoleName": "amplify-goalforge-dev-083fd-unauthRole",
+      "StackName": "amplify-goalforge-dev-083fd",
+      "StackId": "arn:aws:cloudformation:us-east-2:767828741541:stack/amplify-goalforge-dev-083fd/b4c2e460-23a6-11f0-bc25-0ad22cc33bd1",
+      "AmplifyAppId": "dccl2ymfzouwq"
+    },
+    "categories": {
+      "auth": {
+        "goalforgeb712acf9": {}
+      }
+    }
+  }
+}
