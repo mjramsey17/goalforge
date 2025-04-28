@@ -2,12 +2,12 @@ import Image from "next/image";
 import homeBackground from "../../RCmsoc102922-36.png"
 import localFont from 'next/font/local'
 
-const cityBold = localFont({
+/*const cityBold = localFont({
   src: '../fonts/CITYBOLB.TTF', 
   weight: '700', // usually bold weight is 700
   variable: '--font-city-bold',
   display: 'swap',
-});
+});*/
 export default function Page() {
   return (
     <body
