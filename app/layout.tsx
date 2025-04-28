@@ -4,9 +4,9 @@ import "./globals.css";
 
 // app/layout.tsx or pages/_app.tsx
 import { Amplify } from 'aws-amplify';
-import awsExports from '../src/aws-exports'; // or wherever amplify generated it
+import awsmobile from '../src/aws-exports'; // or wherever amplify generated it
 
-Amplify.configure(awsExports);
+Amplify.configure(awsmobile);
 
 
 const geistSans = localFont({
