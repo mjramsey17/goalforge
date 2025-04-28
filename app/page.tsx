@@ -8,7 +8,7 @@ export default function AuthForm() {
 
     const router = useRouter();
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-500 to-maroon-600">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-500 to-maroon-800">
       <Authenticator>
         {({ signOut, user }) => (
         <div className="flex h-screen items-center justify-center">
