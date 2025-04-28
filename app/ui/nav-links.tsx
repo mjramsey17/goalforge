@@ -22,7 +22,6 @@ const links = [
       href: '/dashboard/events',
     },
     { name: 'Goalchart', href: 'dashboard/goalchart'},
-    { name: 'Sign Out', href:'/'}
   ];
   export default function NavLinks() {
     return (
