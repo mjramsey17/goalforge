@@ -1,8 +1,9 @@
 import Image from "next/image";
 import homeBackground from "../../RCmsoc102922-36.png"
 import localFont from 'next/font/local'
+
 const cityBold = localFont({
-  src: '../public/fonts/City-Bold.ttf', 
+  src: './fonts/CITYBOLB.TTF', 
   weight: '700', // usually bold weight is 700
   variable: '--font-city-bold',
   display: 'swap',
